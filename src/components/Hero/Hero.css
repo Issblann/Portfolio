@@ -1,0 +1,15 @@
+@media (max-width: 1024px) {
+  .principal-container {
+    padding: 92px 100px !important;
+  }
+}
+@media (max-width: 892px) {
+  .principal-container {
+    padding: 92px 32px !important;
+  }
+
+  .contaner-icons {
+    flex-wrap: wrap;
+    flex-basis: 30%;
+  }
+}
