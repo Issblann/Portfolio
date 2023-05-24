@@ -52,7 +52,7 @@ const Hero = () => {
     },
   ];
   return (
-    <section className="w-full bg-Secondary pb-6 ">
+    <section id="Home" className="w-full bg-Secondary pb-6 ">
       <div className="max-w-7xl flex-col items-center px-[238px] py-[92px] principal-container  m-auto flex gap-[24px]">
         <h1 className="text-textH1 font-SourceCodePro  leading-[61px] ">
           Hello I'm <br /> Ana Perez
@@ -64,8 +64,12 @@ const Hero = () => {
           academic projects.
         </p>
         <div className="w-full max-w-7xl items-center flex justify-center gap-7 ">
-          <img src={githubIcon} alt="githubIcon" />
-          <img src={linkedinIcon} alt="linkedinIcon" />
+          <a href="https://github.com/Issblann" target="blank">
+            <img src={githubIcon} alt="githubIcon" />
+          </a>
+          <a href="https://www.linkedin.com/in/anaperafan-dev/" target="blank">
+            <img src={linkedinIcon} alt="linkedinIcon" />
+          </a>
         </div>
       </div>
       <div className=" grid grid-cols-3 md:flex lg:gap-4 px-5 gap-4 md:items-center md:justify-center py-[12px] md:gap-1  md:w-[80px] m-auto contaner-icons ">

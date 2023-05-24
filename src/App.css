@@ -6,6 +6,17 @@ main {
   padding-top: 64px;
   height: 100vh;
   color: #ffff;
-  /* gap: 92px;
-  background: #111827; */
+  gap: 92px;
+  background: #111827;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #111827;
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-behavior: unset;
+  }
 }

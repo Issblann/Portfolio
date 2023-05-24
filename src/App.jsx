@@ -6,20 +6,18 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Hero from "./components/Hero/Hero";
 import Experience from "./components/Experience/Experience";
 import Work from "./components/Work/Work";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Header />
       <main>
-        <Routes>
-          <Route exact path="/" element={<Hero />} />
-          {/* <Route path="/About" element={<Experience />} /> */}
-          {/* <Route path="/" element={<Work />} /> */}
-        </Routes>
+        <Hero />
         <Work />
+        <Contact />
       </main>
-    </BrowserRouter>
+    </>
   );
 }
 

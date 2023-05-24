@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import { NavLink } from "react-router-dom";
 import ESFlag from "../../assets/Header/ES-FLAG.svg";
 import VectorGithub from "../../assets/Header/Vector-github.svg";
 import {
@@ -58,17 +57,18 @@ const Header = () => {
               open ? "left-0 top-[60px]" : "right-full top-[60px]"
             } `}
           >
-            <NavLink onClick={closeMenu} className="text-white " to="/">
+            <a onClick={closeMenu} className="text-white " href="#Home">
               Home
-            </NavLink>
-            <NavLink onClick={closeMenu} to="/About">
+            </a>
+            <a onClick={closeMenu} href="#About">
               About
-            </NavLink>
-            <NavLink onClick={closeMenu} to="/Work">
+            </a>
+            <a onClick={closeMenu} href="#Work">
               Work
-            </NavLink>
+            </a>
             <div className="flex">
-              <button
+              <a
+                href="mailto:anaperafan.dev@gmail.com"
                 onClick={closeMenu}
                 className="flex items-center py-3 px-5 h-[39px] rounded-md md:hidden text-textsmall font-SourceSansPro"
               >
@@ -76,26 +76,32 @@ const Header = () => {
                 <span className="ml-1">
                   <HiOutlineArrowSmRight fontSize="14px" />
                 </span>
-              </button>
+              </a>
             </div>
           </ul>
 
           <div className="flex gap-4">
-            <img
-              className=" cursor-pointer"
-              src={VectorGithub}
-              alt="VectorGithub"
-            />
+            <a href="https://github.com/Issblann" target="blank">
+              <img
+                className=" cursor-pointer"
+                src={VectorGithub}
+                alt="VectorGithub"
+              />
+            </a>
+
             <img className=" cursor-pointer" src={ESFlag} alt="ESFlag" />
           </div>
 
           <div className="flex">
-            <button className="flex items-center bg-Primary py-3 px-5 button h-[39px] rounded-md text-textsmall font-SourceSansPro">
+            <a
+              href="mailto:anaperafan.dev@gmail.com"
+              className=" button flex items-center bg-Primary py-3 px-5 a h-[39px] rounded-md text-textsmall font-SourceSansPro"
+            >
               Contact Me
               <span className="ml-1">
                 <HiOutlineArrowSmRight />
               </span>
-            </button>
+            </a>
           </div>
         </nav>
       </div>
