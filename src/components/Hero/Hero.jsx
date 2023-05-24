@@ -52,10 +52,10 @@ const Hero = () => {
     },
   ];
   return (
-    <section className="w-full bg-Secondary">
+    <section className="w-full bg-Secondary pb-6 ">
       <div className="max-w-7xl flex-col items-center px-[238px] py-[92px] principal-container  m-auto flex gap-[24px]">
-        <h1 className="text-textH1 font-SourceCodePro text-center leading-[61px] ">
-          Hello I'm Ana Perez
+        <h1 className="text-textH1 font-SourceCodePro  leading-[61px] ">
+          Hello I'm <br /> Ana Perez
         </h1>
         <p className="text-[#ABADB2] text-leadParagraph font-OpenSans ">
           I am a passionate Frontend Developer who loves web development and
@@ -67,19 +67,21 @@ const Hero = () => {
           <img src={githubIcon} alt="githubIcon" />
           <img src={linkedinIcon} alt="linkedinIcon" />
         </div>
-        <div className="flex gap-4 w-full items-center justify-center contaner-icons ">
-          {tecnologies.map((technology) => {
-            return (
-              <div
-                className="flex items-center justify-center bg-SecondaryLight w-full md:w-1/3 px-[15px] rounded-[4px] py-[3px] font-SourceSansPro text-textbody gap-1"
-                key={technology.name}
-              >
-                <img src={technology.icon} alt={technology.name} />
-                <p>{technology.name}</p>
-              </div>
-            );
-          })}
-        </div>
+      </div>
+      <div className=" grid grid-cols-3 md:flex lg:gap-4 px-5 gap-4 md:items-center md:justify-center py-[12px] md:gap-1  md:w-[80px] m-auto contaner-icons ">
+        {tecnologies.map((technology) => {
+          return (
+            <div
+              className="flex items-center justify-center  bg-SecondaryLight px-[15px] rounded-[4px] py-[3px] font-SourceSansPro text-textbody gap-1"
+              key={technology.name}
+            >
+              <img src={technology.icon} alt={technology.name} />
+              <p className=" font-SourceSansPro text-textsmall md:text-textbody">
+                {technology.name}
+              </p>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

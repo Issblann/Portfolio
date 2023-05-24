@@ -14,9 +14,10 @@ function App() {
       <main>
         <Routes>
           <Route exact path="/" element={<Hero />} />
-          <Route path="/About" element={<Experience />} />
-          <Route path="/Work" component={<Work />} />
+          {/* <Route path="/About" element={<Experience />} /> */}
+          {/* <Route path="/" element={<Work />} /> */}
         </Routes>
+        <Work />
       </main>
     </BrowserRouter>
   );
