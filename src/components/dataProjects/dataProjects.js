@@ -13,6 +13,7 @@ export const projects = [
     finished: true,
     linkGitHub: "https://github.com/Issblann/Sunset",
     linkDeploy: "https://sunset-issblann.vercel.app",
+    isFigma: true,
   },
   {
     id: 2,
@@ -23,6 +24,7 @@ export const projects = [
     finished: false,
     linkGitHub: "#",
     linkDeploy: "#",
+    isFigma: true,
   },
   {
     id: 3,
@@ -33,6 +35,7 @@ export const projects = [
     finished: true,
     linkGitHub: "https://github.com/Issblann/Portfolio",
     linkDeploy: "https://portfolio-issblann.vercel.app",
+    isFigma: true,
   },
   {
     id: 4,
@@ -43,5 +46,6 @@ export const projects = [
     finished: true,
     linkGitHub: "https://github.com/Issblann/FreshCare",
     linkDeploy: "https://fresh-care.vercel.app",
+    isFigma: false,
   },
 ];

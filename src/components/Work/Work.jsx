@@ -9,9 +9,9 @@ const Work = () => {
   return (
     <section
       id="Work"
-      className="w-full items-center justify-center bg-Secondary   py-1 lg:px-[112px] flex flex-col px-6  "
+      className="w-full items-center justify-center bg-Secondary py-1 lg:px-[112px] flex flex-col p-0 md:px-6  "
     >
-      <div className="max-w-7xl w-[80%] md:w-auto  flex-col items-center relative justify-center gap-8 flex flex-wrap ">
+      <div className="max-w-7xl w-[80%] md:w-auto flex-col items-center relative justify-center gap-8 flex flex-wrap ">
         <img
           className="absolute row-vector top-[187px] left-[-75px]"
           width="100px"
@@ -19,7 +19,7 @@ const Work = () => {
           alt="row"
         />
         <img
-          className="absolute rowbt-vector   bottom-[57px]  right-[-71px]"
+          className="absolute rowbt-vector bottom-[57px] right-[-71px]"
           width="100px"
           src={rowBT}
           alt="rowBT"
@@ -37,11 +37,11 @@ const Work = () => {
             return (
               <div
                 key={project.id}
-                className=" relative w-full p-[26px] bg-SecondaryLight flex flex-col gap-6 rounded-[10px]  lg:w-[43%] "
+                className=" relative w-full p-[13px] md:p-[26px] bg-SecondaryLight flex flex-col gap-6 rounded-[10px]  lg:w-[43%] "
               >
                 {isInProcess === false && (
-                  <span className="absolute right-0 top-0 bg-red-800 p-3 rounded-tr-xl">
-                    En proceso
+                  <span className="absolute right-0 top-0 bg-red-800 p-2 rounded-tr-xl">
+                    In process
                   </span>
                 )}
                 <h1 className="md:text-textH3 text-textH5 font-SourceCodePro ">

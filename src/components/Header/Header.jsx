@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import ESFlag from "../../assets/Header/ES-FLAG.svg";
-import VectorGithub from "../../assets/Header/Vector-github.svg";
+
 import {
   HiOutlineArrowSmRight,
   HiOutlineX,
@@ -81,14 +81,6 @@ const Header = () => {
           </ul>
 
           <div className="flex gap-4">
-            <a href="https://github.com/Issblann" target="blank">
-              <img
-                className=" cursor-pointer"
-                src={VectorGithub}
-                alt="VectorGithub"
-              />
-            </a>
-
             <img className=" cursor-pointer" src={ESFlag} alt="ESFlag" />
           </div>
 

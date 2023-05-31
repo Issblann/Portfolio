@@ -57,7 +57,7 @@ const Hero = () => {
         <h1 className="text-textH1 font-SourceCodePro  leading-[61px] ">
           Hello I'm <br /> Ana Perez
         </h1>
-        <p className="text-[#ABADB2] text-leadParagraph font-OpenSans ">
+        <p className="text-[#ABADB2] text-textbody md:text-leadParagraph font-OpenSans ">
           I am a passionate Frontend Developer who loves web development and
           creating attractive interfaces. I am always learning and focused on
           improving my skills. I have experience in creating personal and

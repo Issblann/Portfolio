@@ -7,6 +7,7 @@ import Hero from "./components/Hero/Hero";
 import Experience from "./components/Experience/Experience";
 import Work from "./components/Work/Work";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Work />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 }
