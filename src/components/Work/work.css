@@ -1,7 +1,7 @@
-.container-img {
+.container-img-with-figma {
   position: relative;
   width: 100%;
-  height: 22vh;
+  height: 26vh;
   overflow: hidden;
   display: flex;
   justify-items: center;
@@ -9,7 +9,7 @@
   transition: transform 0.5s ease;
 }
 
-.container-img img {
+.container-img-with-figma img {
   background-position: top;
   position: absolute;
   object-fit: cover;
@@ -21,50 +21,42 @@
   transition: transform 0.5s ease;
 }
 
-.container-img:hover img {
+.container-img-with-figma:hover img {
   transform: translateY(-80%);
   transition: transform 4s ease-in-out;
 }
 
-.container-img:not(:hover) img {
+.container-img-with-figma:not(:hover) img {
   transform: translateY(0);
   transition: transform 4s ease;
 }
 
-@media (max-width: 1280px) and (min-width: 1024px) {
-  .container-img {
-    height: 16vh;
-  }
+.container-img {
+  border-radius: 10px;
+  width: 100%;
+  height: 26vh;
+  display: flex;
+  justify-items: center;
 }
 
-@media (max-width: 1023px) and (min-width: 768px) {
-  .row-vector {
-    left: -131px !important;
-  }
-
-  .rowbt-vector {
-    right: -125px !important;
-    bottom: 112px !important;
-  }
+.container-img img {
+  background-position: top;
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
 }
-@media (max-width: 768px) {
-  .row-vector {
-    left: -83px !important;
-    width: 80px !important;
-  }
 
-  .rowbt-vector {
-    right: -90px !important;
-    bottom: 122px !important ;
-    width: 80px !important;
-  }
-}
-@media (max-width: 640px) {
+@media (max-width: 1023px) {
   .row-vector {
     display: none;
   }
 
   .rowbt-vector {
     display: none;
+  }
+}
+@media (max-width: 500px) {
+  .box-projects {
+    width: 100%;
   }
 }

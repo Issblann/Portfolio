@@ -11,6 +11,7 @@ import figmaIcon from "../../assets/Hero/figma-icon.svg";
 import mysqlIcon from "../../assets/Hero/sql-icon.svg";
 import githubIcon from "../../assets/Hero/github-icon.svg";
 import linkedinIcon from "../../assets/Hero/linkedin-svg.svg";
+import imgProfile from "../../assets/Hero/img-profile.jpeg";
 
 const Hero = () => {
   const tecnologies = [
@@ -52,31 +53,55 @@ const Hero = () => {
     },
   ];
   return (
-    <section id="Home" className="w-full bg-Secondary pb-6 ">
-      <div className="max-w-7xl flex-col items-center px-[238px] py-[92px] principal-container  m-auto flex gap-[24px]">
-        <h1 className="text-textH1 font-SourceCodePro  leading-[61px] ">
-          Hello I'm <br /> Ana Perez
-        </h1>
-        <p className="text-[#ABADB2] text-textbody md:text-leadParagraph font-OpenSans ">
-          I am a passionate Frontend Developer who loves web development and
-          creating attractive interfaces. I am always learning and focused on
-          improving my skills. I have experience in creating personal and
-          academic projects.
-        </p>
-        <div className="w-full max-w-7xl items-center flex justify-center gap-7 ">
-          <a href="https://github.com/Issblann" target="blank">
-            <img src={githubIcon} alt="githubIcon" />
-          </a>
-          <a href="https://www.linkedin.com/in/anaperafan-dev/" target="blank">
-            <img src={linkedinIcon} alt="linkedinIcon" />
-          </a>
+    <section
+      id="Home"
+      className="w-full  mb-24 bg-Secondary pb-6 mt-8 flex flex-col items-center justify-center "
+    >
+      <div className="max-w-7xl flex-col md:flex-row items-center py-[92px] principal-container flex gap-[60px]">
+        <div className="flex flex-col gap-6 text-center md:text-start ">
+          <h1 className="text-textH1 font-SourceCodePro  leading-[61px] ">
+            Hello I'm <br /> Ana Perez
+          </h1>
+
+          <p className="text-textbody font-OpenSans text-[#ABADB2]">
+            Frontend developer based in Cali, Colombia 📍
+          </p>
+          <div className="w-full max-w-7xl items-center flex gap-5 justify-center md:justify-normal ">
+            <a href="https://github.com/Issblann" target="blank">
+              <img src={githubIcon} alt="githubIcon" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/anaperafan-dev/"
+              target="blank"
+            >
+              <img src={linkedinIcon} alt="linkedinIcon" />
+            </a>
+          </div>
+          <div className="flex gap-6 justify-center md:justify-normal">
+            <a
+              className="flex items-center bg-Primary py-3 px-5 hover:bg-PrimaryDark transition-all ease-in-out h-[39px] rounded-md text-textsmall font-SourceSansPro"
+              href="https://drive.google.com/file/d/1RtdqViRI0Wv2lQ75sh63q8Bt2EaTIkKj/view?usp=sharing"
+              target="blank"
+            >
+              CV English
+            </a>
+            <a
+              className="flex items-center bg-Primary hover:bg-PrimaryDark transition-all ease-in-out py-3 px-5 a h-[39px] rounded-md text-textsmall font-SourceSansPro"
+              href="https://drive.google.com/file/d/1Zg86HgReZzKRoS3Pzxx9PkFIQlSDJ3lh/view?usp=sharing"
+              target="blank"
+            >
+              CV Spanish
+            </a>
+          </div>
         </div>
+
+        <div className="container-img-hero"></div>
       </div>
       <div className=" grid grid-cols-3 md:flex lg:gap-4 px-5 gap-4 md:items-center md:justify-center py-[12px] md:gap-1  md:w-[80px] m-auto contaner-icons ">
         {tecnologies.map((technology) => {
           return (
             <div
-              className="flex items-center justify-center  bg-SecondaryLight px-[15px] rounded-[4px] py-[3px] font-SourceSansPro text-textbody gap-1"
+              className="flex items-center justify-center bg-SecondaryLight px-[15px] rounded-[4px] py-[3px] font-SourceSansPro text-textbody gap-1"
               key={technology.name}
             >
               <img src={technology.icon} alt={technology.name} />

@@ -9,7 +9,8 @@ export const projects = [
     name: "Sunset",
     img: SUNSETIMG,
     technologies: ["React", "CSS Vanilla"],
-    description: "Description",
+    description:
+      "Weather page with a map and geolocation function. Designed with an intuitive and attractive interface. Uses OpenWeather API.",
     finished: true,
     linkGitHub: "https://github.com/Issblann/Sunset",
     linkDeploy: "https://sunset-issblann.vercel.app",
@@ -20,10 +21,9 @@ export const projects = [
     name: "Dafiti",
     img: DAFITIIMG,
     technologies: ["React", "NodeJS", "Tailwind"],
-    description: "Description",
+    description:
+      "A minimalist and simple eCommerce that offers a straightforward shopping experience. Designed with a clean and elegant interface. Product filtering and categories, payment gateway, and wishlist functionality.",
     finished: false,
-    linkGitHub: "#",
-    linkDeploy: "#",
     isFigma: true,
   },
   {
@@ -31,7 +31,8 @@ export const projects = [
     name: "Portfolio",
     img: Portfolio,
     technologies: ["React", "Tailwind"],
-    description: "Description",
+    description:
+      "Here, I showcase my most innovative projects, reflecting my ability to design and develop diverse functionalities.",
     finished: true,
     linkGitHub: "https://github.com/Issblann/Portfolio",
     linkDeploy: "https://portfolio-issblann.vercel.app",
@@ -42,7 +43,8 @@ export const projects = [
     name: "FreshCare",
     img: FreshCareIMG,
     technologies: ["HTML", "CSS", "Javascript"],
-    description: "Description",
+    description:
+      "eCommerce platform dedicated to Korean skincare and beauty. Focused on quality, effectiveness, and the latest trends.",
     finished: true,
     linkGitHub: "https://github.com/Issblann/FreshCare",
     linkDeploy: "https://fresh-care.vercel.app",

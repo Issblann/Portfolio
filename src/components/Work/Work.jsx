@@ -9,7 +9,7 @@ const Work = () => {
   return (
     <section
       id="Work"
-      className="w-full items-center justify-center bg-Secondary py-1 lg:px-[112px] flex flex-col p-0 md:px-6  "
+      className="w-full items-center pt-[70px] justify-center bg-Secondary py-1 lg:px-[112px] flex flex-col p-0 md:px-6  "
     >
       <div className="max-w-7xl w-[80%] md:w-auto flex-col items-center relative justify-center gap-8 flex flex-wrap ">
         <img
@@ -25,15 +25,18 @@ const Work = () => {
           alt="rowBT"
         />
         <div className="w-full max-w-7xl px-1 sm:px-4">
-          <h2 className="md:text-textH2 text-textH4 text-left  font-SourceCodePro mb-1 ">
+          <h2 className="md:text-left text-center md:text-textH2 text-textH4 font-SourceCodePro mb-1 ">
             My latest <span className="text-Primary">work</span>
           </h2>
         </div>
 
-        <div className="w-full flex justify-center flex-wrap  gap-10 md:gap-6 p-0 md:p-4 flex-col lg:w-full lg:flex-row">
+        <div className="box-projects w-full flex justify-center md:w-[60%] flex-wrap gap-10 md:gap-6 p-0 md:p-4 flex-col lg:w-full lg:flex-row">
           {projects.map((project) => {
             const isInProcess =
               project.hasOwnProperty("finished") && project.finished;
+
+            const isWithFigma =
+              project.hasOwnProperty("isFigma") && project.isFigma;
             return (
               <div
                 key={project.id}
@@ -47,9 +50,15 @@ const Work = () => {
                 <h1 className="md:text-textH3 text-textH5 font-SourceCodePro ">
                   {project.name}
                 </h1>
-                <div className="container-img">
-                  <img src={project.img} alt="imagen" />
-                </div>
+                {isWithFigma ? (
+                  <div className="container-img-with-figma">
+                    <img src={project.img} alt="imagen" />
+                  </div>
+                ) : (
+                  <div className="container-img">
+                    <img src={project.img} alt="imagen" />
+                  </div>
+                )}
 
                 <div className="w-full flex justify-between  gap-5 px-1">
                   <div className="flex flex-wrap items-center gap-3 ">
@@ -65,20 +74,28 @@ const Work = () => {
                     })}
                   </div>
                   <div className="flex flex-col sm:flex-row items-center gap-3">
-                    <a href={project.linkGitHub} target="blank">
-                      <AiOutlineGithub width="26px" height="26px" />
-                    </a>
-                    <a href={project.linkDeploy} target="blank">
-                      <img
-                        src={deployicon}
-                        width="18px"
-                        height="18px"
-                        alt="img-deploy"
-                      />
-                    </a>
+                    {project.linkDeploy && project.linkGitHub ? (
+                      <>
+                        <a href={project.linkGitHub} target="blank">
+                          <AiOutlineGithub width="26px" height="26px" />
+                        </a>
+                        <a href={project.linkDeploy} target="blank">
+                          <img
+                            src={deployicon}
+                            width="18px"
+                            height="18px"
+                            alt="img-deploy"
+                          />
+                        </a>
+                      </>
+                    ) : (
+                      ""
+                    )}
                   </div>
                 </div>
-                <p>{project.description}</p>
+                <div className=" p-2">
+                  <p>{project.description}</p>
+                </div>
               </div>
             );
           })}

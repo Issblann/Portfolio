@@ -38,7 +38,9 @@ const Header = () => {
     <header className="w-full  bg-Secondary h-16 z-10 fixed px-7 ">
       <div className="max-w-screen-2xl flex items-center h-full justify-between mx-auto">
         <div className="flex">
-          <h1 className="text-textbody font-SourceSansPro ">Ana.Dev</h1>
+          <a href="#Home">
+            <h1 className="text-textbody font-SourceSansPro ">Ana.Dev</h1>
+          </a>
         </div>
 
         <nav className="flex items-center gap-7 ">
@@ -60,7 +62,7 @@ const Header = () => {
             <a onClick={closeMenu} className="text-white " href="#Home">
               Home
             </a>
-            <a onClick={closeMenu} href="#About">
+            <a onClick={closeMenu} href="#Aboutme">
               About
             </a>
             <a onClick={closeMenu} href="#Work">
@@ -79,10 +81,6 @@ const Header = () => {
               </a>
             </div>
           </ul>
-
-          <div className="flex gap-4">
-            <img className=" cursor-pointer" src={ESFlag} alt="ESFlag" />
-          </div>
 
           <div className="flex">
             <a
