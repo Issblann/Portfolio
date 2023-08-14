@@ -2,10 +2,22 @@ import DAFITIIMG from "../../assets/Work/DAFITI.svg";
 import FreshCareIMG from "../../assets/Work/FreshCare.jpeg";
 import Portfolio from "../../assets/Work/Portfolio.svg";
 import SUNSETIMG from "../../assets/Work/SUNSET.svg";
-
+import HyperX from "../../assets/Work/HyperX.jpeg";
 export const projects = [
   {
-    id: 1,
+    id: 4,
+    name: "HyperX",
+    img: HyperX,
+    technologies: ["React", "Styled Components"],
+    description:
+      "Web page virtual store inspired by the design of hyperx, store peripherals gamers. It was made as a final project for the React module. Functional. No backend.",
+    finished: true,
+    linkGitHub: "https://github.com/Issblann/eccommerce-tech-NUCBA",
+    linkDeploy: "https://eccommerce-tech-nucba.vercel.app",
+    isFigma: false,
+  },
+  {
+    id: 3,
     name: "Sunset",
     img: SUNSETIMG,
     technologies: ["React", "CSS Vanilla"],
@@ -18,16 +30,6 @@ export const projects = [
   },
   {
     id: 2,
-    name: "Dafiti",
-    img: DAFITIIMG,
-    technologies: ["React", "NodeJS", "Tailwind"],
-    description:
-      "A minimalist and simple eCommerce that offers a straightforward shopping experience. Designed with a clean and elegant interface. Product filtering and categories, payment gateway, and wishlist functionality.",
-    finished: false,
-    isFigma: true,
-  },
-  {
-    id: 3,
     name: "Portfolio",
     img: Portfolio,
     technologies: ["React", "Tailwind"],
@@ -39,7 +41,7 @@ export const projects = [
     isFigma: true,
   },
   {
-    id: 4,
+    id: 1,
     name: "FreshCare",
     img: FreshCareIMG,
     technologies: ["HTML", "CSS", "Javascript"],

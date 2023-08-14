@@ -11,7 +11,6 @@ import figmaIcon from "../../assets/Hero/figma-icon.svg";
 import mysqlIcon from "../../assets/Hero/sql-icon.svg";
 import githubIcon from "../../assets/Hero/github-icon.svg";
 import linkedinIcon from "../../assets/Hero/linkedin-svg.svg";
-import imgProfile from "../../assets/Hero/img-profile.jpeg";
 
 const Hero = () => {
   const tecnologies = [
