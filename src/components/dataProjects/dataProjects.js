@@ -10,7 +10,7 @@ export const projects = [
     img: HyperX,
     technologies: ["React", "Styled Components"],
     description:
-      "Web page virtual store inspired by the design of hyperx, store peripherals gamers. It was made as a final project for the React module. Functional. No backend.",
+      "Web page virtual store inspired by the design of hyperx, store peripherals gamers. It was made as a final project for the React module. Functional.",
     finished: true,
     linkGitHub: "https://github.com/Issblann/eccommerce-tech-NUCBA",
     linkDeploy: "https://eccommerce-tech-nucba.vercel.app",
